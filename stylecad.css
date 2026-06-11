@@ -1,0 +1,133 @@
+body{
+    flex-direction: column;
+    padding: 5dvh;
+    background-color: #d7feff;
+    display: block;
+    justify-content: center;
+    color: #51677e;
+    text-align: center;
+    
+}
+.cadastro{
+    width: 1300px;
+    height: 400px;
+    border-radius: 10dvh;
+    background-color: #5ce1e6;
+    margin: auto;
+    text-align: center ;
+    line-height: 5.9; /* vezes o tamanho da fonte */
+    padding: 6dvh ;
+}
+h1{
+    width: 50dvh;
+    height: 20dvh;
+   
+}
+.voltar{
+    
+    position: absolute;
+    top: 60px;     /* Distância do topo da página */
+    right: 30px;   /* Distância da lateral direita da página */
+    /* Remove decorações de link e centraliza o texto */
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.entrar{
+    background-color: #d32323;
+    color: azure;
+    border-radius: 1dvh;
+    width: 10dvh;
+    height: 4dvh; 
+}
+.placeholder{
+    text-align: center; 
+}
+
+
+input[type="email"],
+input[type="password"],input[type="number"] ,input[type="text"],input[type="date"],input[type="tel"]{
+  border-radius: 11px;  /* Arredonda as bordas */
+  background-color: #f0f0f0; /* muda a cor e tamanaho bordas*/
+  border: 1px solid #f0f0f0;
+  padding: 10px;
+  width: 250px;
+  text-align: center;
+}
+input[type="email"]::placeholder,
+input[type="password"]::placeholder ,input[type="number"]::placeholder ,input[type="text"]::placeholder,input[type="date"]::placeholder,input[type="tel"]::placeholder{
+  text-align: center; /* centraliza a mensagem que está dentro do campo de login e senha.*/
+}
+.cadastro:hover {
+ transform: scale(1.1);
+}
+.cadastro:hover {
+    transition: transform 0.3s ease; /* Faz a animação durar 0.3 segundos */
+}
+
+/* ==========================================================================
+   RESPONSIVIDADE PARA CELULAR
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+    
+    /* 1. Ajusta o fundo para o celular */
+    body {
+        padding: 20px 10px !important; /* Troca o padding de 5dvh para caber na tela */
+        height: auto !important;
+    }
+
+    /* 2. Ajusta o título para não sumir ou cortar no mobile */
+    h1 {
+        width: 100% !important; /* Neutraliza os 50dvh fixos */
+        height: auto !important; /* Neutraliza os 20dvh fixos */
+        font-size: 1.6rem !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* 3. A mágica da caixa de Cadastro no celular */
+    .cadastro {
+        width: 95% !important;   /* Em vez de 1300px, ocupa a largura do celular */
+        height: auto !important;  /* Permite que ela cresça para baixo com os inputs */
+        padding: 30px 15px !important;
+        border-radius: 30px !important; /* Deixa a borda proporcional à tela pequena */
+        
+        /* Reduz o line-height gigante APENAS no celular para os campos não se espalharem por quilômetros */
+        line-height: 1.5 !important; 
+        
+        /* Organiza seus inputs um embaixo do outro no formato de lista vertical */
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 15px !important; /* Cria um espaçamento perfeito entre cada campo */
+    }
+
+    /* 4. Ajusta o tamanho dos inputs no celular */
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    input[type="text"],
+    input[type="date"],
+    input[type="tel"] {
+        width: 90% !important; /* Ocupa quase toda a largura interna da caixa azul */
+        max-width: 260px !important; /* Mantém próximo aos seus 250px originais */
+        box-sizing: border-box !important; /* Impede que o input quebre a borda */
+        margin: 0 auto !important;
+    }
+
+    /* 5. Esconde as tags <br> originais APENAS no celular para não gerar espaços vazios gigantes */
+    .cadastro br {
+        display: none !important;
+    }
+
+    /* 6. Corrige os botões Voltar e Salvar para o tamanho do dedo no celular */
+    .voltar, .entrar {
+        width: 120px !important; /* Aumenta um pouco em relação aos 10dvh para ficar fácil de clicar */
+        height: 40px !important;
+        line-height: 40px !important; /* Centraliza o texto dentro do botão */
+        display: inline-block !important;
+        top: 0px;     /* Distância do topo da página */
+        right: 0px;
+    }
+}

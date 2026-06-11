@@ -1,0 +1,371 @@
+.header-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.barra {
+    display: flex;
+    flex-direction: column; /* Mudamos para coluna para empilhar logo, links e a linha */
+    align-items: flex-start; /* Alinha os itens à esquerda */
+    padding: 10px 50px;
+    /* Outros estilos da barra, se houver */
+}
+
+.linkcar a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.text label {
+    width: 100%; /* Faz a linha de pontos ocupar a largura da barra */
+    font-size: 1em;
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left; /* Alinha os pontos à esquerda */
+    padding-bottom: 5px; /* Adiciona um pouco de espaço abaixo da linha */
+}
+
+.capa {
+    width: 100%;
+    height: auto;
+    border-radius: 5dvh;
+    padding: 0;
+    margin: 10px auto;
+    border: 0;
+    display: block;
+    max-width: 170dvh;
+    max-height: 80dvh;
+    object-fit: cover;
+}
+
+.logo1{
+    width: 50dvh;
+    height: 20dvh;
+    display: flex;
+    margin: -5dvh;
+    margin-left: 1dvh;
+    }
+ 
+
+.linkcar{
+    /* background-color: #d7feff; */
+    width: 100%; 
+    height: 0;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3dvh;
+    display: block;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.entrar , .voltar{
+    width: 19dvh; /* Ajustado para um tamanho fixo legível em qualquer tela(largura do botão) */
+    height: 5dvh; /*tamanho do botão*/
+    border-radius: 5dvh;
+    padding: 1dvh;
+    background-color: #d32323;
+    margin: -1dvh;
+    color: azure;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+  
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+}
+
+.text {  
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Alinha os links à direita */
+    width: 100%; /* Ocupa a largura total da barra */
+
+}
+.text2{
+    text-decoration: none; /* Remove sublinhado do iperlink */
+   color: #51677e; 
+   text-align: center;
+}
+.container-animais{
+    display: flex;
+    flex-wrap: wrap; /* Para quebrar para a próxima linha em telas menores */
+    justify-content: center; /* Centralizar os itens horizontalmente */
+    gap: 40px; /* Espaçamento entre os itens */
+    padding: 20px; /* Espaçamento ao redor do container */
+}
+
+.item-animal{
+    display: flex;
+    flex-direction: column; /* Alinhar imagem e texto verticalmente */
+    align-items: center; /* Centralizar imagem e texto horizontalmente dentro do item */
+    text-align: center;
+    padding: 5dvh;
+    
+}
+
+.animal-imagem{
+    width: 25dvh; /* Tamanho da imagem relativo à altura da viewport */
+    height: 25dvh;
+    border-radius: 5dvh;
+    padding: 2dvh;
+    background-color: #5ce1e6;
+    margin-bottom: -3vh; /* Espaço entre a imagem e a descrição */
+}
+
+.animal-descricao {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.dicas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 30dvh; /* Afasta os dois objetos*/
+    padding: 20dvh; /* A descrição desce para baixo, saindo da imagem*/
+}
+
+.item-dicas {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    
+}
+
+.animal-dicas {
+    width: 50dvh;
+    height: 50dvh;
+    border-radius: 5dvh;
+    padding: 1vh;
+    background: linear-gradient(to right, #cdffd8, #94b9ff,#bbf0de);/* faz um degrade*/
+    margin-bottom: -6vh; /* A descrição sobe para cima(encaixando dentro da imagem)*/
+    -webkit-animation: beta-gradient 3s linear infinite;
+    -moz-animation: beta-gradient 3s linear infinite;
+    animation: beta-gradient 3s linear infinite;
+    overflow: hidden;
+    background-size: 500% auto;
+}
+.animal-dicas ::after {
+  content: "";
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: -webkit-linear-gradient(315deg, rgba(9, 79, 153, 0.29), rgba(164, 164, 164, 0.18) 50%, rgba(45, 45, 81, 0.49) 95%), url(https://www.transparenttextures.com/patterns/climpek.png);
+  background-image: linear-gradient(135deg, #ffffff00, #ffffff2e 50%, #ffffff00 95%), url(https://www.transparenttextures.com/patterns/climpek.png);
+  -webkit-animation: beta-gradient 40s linear infinite;
+  -moz-animation: beta-gradient 40s linear infinite;
+  animation: beta-gradient 40s linear infinite;
+}
+@-webkit-keyframes beta-gradient {
+    0%{background-position:0 0}
+    100%{background-position:100% 0}
+}
+@-moz-keyframes beta-gradient {
+    0%{background-position:0 0}
+    100%{background-position:100% 0}
+}
+@keyframes beta-gradient { 
+    0%{background-position:0 0}
+    100%{background-position:100% 0}
+}
+
+.textduv {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+body {
+    background-color: #d7feff;
+    
+}
+td{
+    display: flex;
+    justify-content: center;
+}
+.mov{
+        color: #333;
+        cursor: pointer; /* Transforma a seta do mouse na "mãozinha" de clique */
+        transition: transform 0.5s ease; /* Suaviza o movimento */
+    }
+.mov :hover{
+    color: #007BFF; /* Muda a cor opcionalmente */
+    
+}
+
+.item-animal:hover, .info-imagem-adote:hover,.imagem-doe:hover,.login:hover {
+ transform: scale(1.1);
+}
+.item-animal:hover, .info-imagem-adote:hover, .imagem-doe:hover,.login:hover {
+    transition: transform 0.3s ease; /* Faz a animação durar 0.3 segundos */
+}
+
+
+/* ==========================================================================
+   RESPONSIVIDADE
+   ========================================================================== */
+
+   /* Regras gerais para garantir centralização de títulos em qualquer ecrã */
+h1 {
+    text-align: center !important;
+    width: 100% !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Força o container do topo a exibir tudo verticalmente e limpa alturas fixas */
+    div.header-container {
+        height: auto !important;
+        min-height: min-content !important;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    /* Força a barra a aparecer e quebrar em linha */
+    div.barra {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        height: auto !important;
+        position: static !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        padding: 20px 10px !important;
+        background-color: #d7feff !important; /* Força uma cor de fundo para os links não sumirem no fundo */
+    }
+
+    /* Garante que o logo não suma */
+    img.logo1 {
+        display: block !important;
+        max-width: 140px !important;
+        height: auto !important;
+        margin: 0 auto 20px auto !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    /* Força a div interna do menu a ficar totalmente visível */
+    div.text {
+        display: flex !important;
+        width: 100% !important;
+        height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border-top: none !important; /* Remove a linha pontilhada no mobile */
+        justify-content: center !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+      div.textduv {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important; /* Centraliza os elementos estruturais */
+        text-align: center !important;  /* Centraliza os textos e labels */
+        width: 100% !important;
+        padding: 20px 15px !important;
+        box-sizing: border-box !important;
+    }
+    div.textduv h1 {
+        text-align: center !important;
+        font-size: 1.8rem !important;
+        width: 100% !important;
+        margin: 15px auto !important;
+        word-wrap: break-word !important;
+    }
+
+    div.textduv label, 
+    div.textduv h3 {
+        display: block !important;
+        text-align: center !important;
+        width: 100% !important;
+        margin-top: 20px !important;
+        font-weight: bold !important;
+    }
+
+    /* Ajusta e centraliza os parágrafos descritivos */
+    div.textduv p {
+        text-align: center !important; /* Altera o alinhamento para o meio no telemóvel */
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+        width: 100% !important;
+        max-width: 600px !important;
+        margin: 10px auto !important;
+    }
+
+    /* Remove quebras de linha manuais (<br>) que possam deformar o texto centralizado */
+    div.textduv p br {
+        display: none !important;
+    }
+    
+    /* Força o menu (<nav>) e suas opções a aparecerem na tela */
+    nav.linkcar {
+        display: flex !important;
+        flex-direction: column !important; /* Itens um embaixo do outro */
+        width: 100% !important;
+        height: auto !important;
+        gap: 12px !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        text-align: center !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    /* Estilização forçada dos links/botões no celular */
+    nav.linkcar a {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        padding: 12px !important;
+        color: #333333 !important; /* Força a cor do texto para não ficar invisível */
+        background-color: #bffafc !important; /* Fundo cinza claro para destacar o botão */
+        border-radius: 6px !important;
+        font-size: 1.1rem !important;
+        text-decoration: none !important;
+        width: 85% !important;
+        max-width: 280px !important;
+        margin: 0 auto !important;
+    }
+
+    /* Força o destaque do botão de LOGIN */
+    nav.linkcar a.entrar {
+        background-color: #f07167 !important;
+        color: #ffffff !important;
+        font-weight: bold !important;
+    }
+
+    /* Garante que a imagem do cão e gato não cubra o menu */
+    img.capa {
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
+        margin-top: 20px !important;
+    }
+
+
+}
+
+
+
+

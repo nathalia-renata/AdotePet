@@ -1,0 +1,81 @@
+/* ==========================================================================
+   CSS DO LOGIN: CENTRALIZADO E RESPONSIVO 
+   ========================================================================== */
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #d7feff;
+    /* Flexbox corrige a centralização perfeita na horizontal e vertical */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, sans-serif; /* Altera para uma fonte padrão caso queira */
+    
+}
+
+.login {
+    width: 90%;
+    max-width: 350px; /* Mantém seus 350px no PC, mas encolhe no celular */
+    height: auto;     /* Deixa a altura fluida para não cortar os textos internos */
+    min-height: 400px; /* Garante os seus 400px originais de espaço mínimo */
+    border-radius: 40px; /* Substituído 10dvh por px para evitar deformação no celular */
+    background-color: #5ce1e6;
+    margin: 20px auto;
+    padding: 30px 20px;
+    box-sizing: border-box; /* Impede que o padding estoure a largura */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espaçamento uniforme entre os elementos */
+}
+
+/* Estilização das Labels */
+.login label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2px;
+}
+
+/* Botão Entrar */
+
+.placeholder {
+    text-align: center;
+}
+
+/* Campos de Input */
+input[type="email"],
+input[type="password"] {
+    border-radius: 14px;
+    background-color: #f0f0f0; 
+    border: 1px solid #f0f0f0;
+    padding: 12px;
+    width: 100% !important; /* Faz o input respeitar o limite interno da caixa */
+    max-width: 260px;       /* Mantém próximo aos seus 250px originais */
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+    text-align: center;
+}
+
+/* Texto de rodapé (Não tem conta? Cadastre aqui) */
+.login p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+/* Seus efeitos de Hover originais preservados */
+.login {
+    transition: transform 0.3s ease;
+}
+.login:hover {
+    transform: scale(1.03); /* Diminuído levemente de 1.1 para não cortar na borda do celular */
+}

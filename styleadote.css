@@ -1,0 +1,44 @@
+body{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image:url('Fundoclaro.jpg');
+    background-position: center;/*centraliza a imagem*/
+    
+}
+h1 {
+    color: #51677e;
+}
+
+.img-adote-ld{
+    display: flex;/*imagem lado a lado*/
+    flex-wrap: wrap;/*se não couber na tela pula para o lado de baixo*/
+    height: 10dvh;
+    gap: 7dvh;/*espaço entre imagens*/
+    justify-content: center;/*centraliza*/
+    padding: 5dvh;
+}
+.imagem-adote{
+    border: 4px solid #ffffff; /* largura, estilo e cor */
+    border-radius: 30px;     /* cantos arredondados */
+    width: 50dvh;  
+    padding: 1vh;
+    margin-bottom: 3vh; 
+ 
+}
+.info-imagem-adote{
+    text-align:left;
+    font-size: 1.7dvh;
+    color: #51677e;
+    padding-bottom: 5dvh;/*espaço da linha da frase*/
+}
+.adocao-imagem{
+    width: 25dvh; /* Tamanho da imagem relativo à altura da viewport */
+    height: 25dvh;
+    border-radius: 5dvh;
+    padding: 2dvh;
+    background-color: #5ce1e6;
+    margin-bottom: -3vh; /* Espaço entre a imagem e a descrição */
+
+}
+
+

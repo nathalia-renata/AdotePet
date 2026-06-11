@@ -1,0 +1,12 @@
+body{
+    font-family: 'Alice', serif;
+}
+
+@font-face {
+  font-family: 'Alice';
+  src: url("C:\Users\natha\OneDrive\Documentos\DESENVOLVIMENTO DE SISTEMAS\HTML\Portifolio\Adoção de Animais\Alice-Regular.ttf") format('ttf'),
+       url("C:\Users\natha\OneDrive\Documentos\DESENVOLVIMENTO DE SISTEMAS\HTML\Portifolio\Adoção de Animais\Alice-Regular.ttf") format('ttf'),
+       url("C:\Users\natha\OneDrive\Documentos\DESENVOLVIMENTO DE SISTEMAS\HTML\Portifolio\Adoção de Animais\Alice-Regular.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal; /* adiciona a fonte do texto*/
+}

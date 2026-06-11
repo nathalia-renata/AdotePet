@@ -1,0 +1,16 @@
+body{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image:url('Fundoclaro.jpg');
+    background-position: center;/*centraliza a imagem*/
+    color: #51677e;
+    padding: 12dvh;
+    
+    
+}
+
+p{
+    line-height: 1.9; /* vezes o tamanho da fonte */
+    
+}
+
