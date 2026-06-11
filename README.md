@@ -58,12 +58,11 @@ Este diagrama representa as funcionalidades do sistema sob a perspectiva dos uti
 ## Diagrama Entidade-Relacionamento Estendido (EER)
 
 Este diagrama representa a modelagem do meu banco de dados relacional, ou seja, como as informações que o usuário digita nos formulários HTML serão armazenadas de forma organizada.
-Você estruturou duas tabelas principais de forma correta:
-Tabela cadastro (Dados Pessoais)Esta tabela mapeia exatamente os campos que você criou no formulário do arquivo cadastro.html:
+As tabelas principais foram estruturadas:
+Tabela cadastro (Dados Pessoais)Esta tabela mapeia exatamente os campos que eu criei tá no formulário do arquivo cadastro.html:
 id_usuario INT: A Chave Primária (PK). Um identificador exclusivo e numérico para cada pessoa.nome, email, cpf, celular, datanasc, bairro, rua, cidade, estado: Armazenam os dados cadastrais coletados no formulário.Tabela login (Credenciais de Acesso)Esta tabela gerencia a segurança e a autenticação do utilizador na página login.html:
 id_login INT: Chave Primária da tabela de autenticação.email e senha: Dados validados no momento do acesso.cadastro_id_usuario: Esta é a Chave Estrangeira (FK). Ela cria a linha de conexão que liga as duas tabelas.O Relacionamento (Cardinalidade)A linha que conecta as tabelas possui o símbolo de 1 para 1 (1:1) nas extremidades (representado pelos traços perpendiculares ||).
-O que significa: Significa que um registro na tabela de cadastro possui exatamente um registro correspondente na tabela de login. Um usuário não pode ter dois logins com o mesmo perfil, e um login não pode pertencer a dois usuários diferentes.🛠️ Como os dois diagramas se conectam ao seu site?Quando a Nathália clica em "Salvar e Entrar" no seu site:
-O sistema executa a ação de Registrar-se (prevista no Caso de Uso).Os dados de endereço e contato vão para a tabela cadastro (no Banco de Dados).O e-mail e a senha criados criam uma linha correspondente na tabela login (conectados pelo id_usuario).Da próxima vez, o utilizador conseguirá fazer o caso de uso Efetuar login usando apenas a tabela menor de credenciais.
+O que significa: Significa que um registro na tabela de cadastro possui exatamente um registro correspondente na tabela de login. Um usuário não pode ter dois logins com o mesmo perfil, e um login não pode pertencer a dois usuários diferentes.
 
 ## 👩‍💻 Autora
 
