@@ -43,7 +43,7 @@ As seguintes tecnologias foram utilizadas na construção deste ecossistema web:
 ## 📄🖥️ Visualizar Site
 
 Para visualizar as páginas e testar algumas funcionalidades acesse o site abaixo 👇🏻
-https://nathalia-renata.github.io/AdotePet/
+ * https://nathalia-renata.github.io/AdotePet/
 
 ---
 
